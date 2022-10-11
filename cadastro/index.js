@@ -22,7 +22,7 @@ const cadastros = {}
 app.post ('/cadastros', (req, res) => {
   contador++
   const texto = req.body.texto
-  lembretes[contador] = {contador, texto}
+  cadastros[contador] = {contador, texto}
   //201 Created OK
   res.status(201).send(cadastros[contador])
 })
